@@ -318,38 +318,46 @@ from cat_delegacion as d, sireac_formato2 as t where d.id_delegacion = t.id_dele
     <th colspan="7">SUMAR EL NÚMERO DE PERSONAS POR RANGO DE EDAD Y CAPTURARLO EN LOS SIGUIENTES CAMPOS</th>
 
     <tr align="center" bgcolor="#B29FD5">
-    <th>TOTAL</th>
     <th>MUJERES</th>
     <th>HOMBRES</th>
     <th>OTRO</th>
     <th>TOTAL</th>
+
     <th>MUJERES</th>
     <th>HOMBRES</th>
     <th>OTRO</th>
     <th>TOTAL</th>
+
     <th>MUJERES</th>
     <th>HOMBRES</th>
     <th>OTRO</th>
     <th>TOTAL</th>
+
     <th>MUJERES</th>
     <th>HOMBRES</th>
     <th>OTRO</th>
     <th>TOTAL</th>
+
     <th>MUJERES</th>
     <th>HOMBRES</th>
     <th>OTRO</th>
     <th>TOTAL</th>
+
     <th>MUJERES</th>
     <th>HOMBRES</th>
     <th>OTRO</th>
     <th>TOTAL</th>
+
     <th>MUJERES</th>
     <th>HOMBRES</th>
     <th>OTRO</th>
     <th>TOTAL</th>
+
     <th>MUJERES</th>
     <th>HOMBRES</th>
     <th>OTRO</th>
+    <th>TOTAL</th>
+
     <th>MENORES DE 16</th>
     <th>16 A 17</th>
     <th>18 A 29</th>
@@ -367,38 +375,46 @@ from cat_delegacion as d, sireac_formato2 as t where d.id_delegacion = t.id_dele
      
   echo '
   <td align="center">'.utf8_encode($row['nombre_delegacion']).'</td>
-  <td align="center">'.$row['total1'].'</td>
   <td align="center">'.$row['mujeres1'].'</td>
   <td align="center">'.$row['hombres1'].'</td>
   <td align="center">'.$row['otros1'].'</td>
-  <td align="center">'.$row['total2'].'</td>
+  <td align="center">'.$row['total1'].'</td>
+
   <td align="center">'.$row['mujeres2'].'</td>
   <td align="center">'.$row['hombres2'].'</td>
   <td align="center">'.$row['otros2'].'</td>
-  <td align="center">'.$row['total3'].'</td>
+  <td align="center">'.$row['total2'].'</td>
+
   <td align="center">'.$row['mujeres3'].'</td>
   <td align="center">'.$row['hombres3'].'</td>
   <td align="center">'.$row['otros3'].'</td>
-  <td align="center">'.$row['total4'].'</td>
+  <td align="center">'.$row['total3'].'</td>
+
   <td align="center">'.$row['mujeres4'].'</td>
   <td align="center">'.$row['hombres4'].'</td>
   <td align="center">'.$row['otros4'].'</td>
-  <td align="center">'.$row['total5'].'</td>
+  <td align="center">'.$row['total4'].'</td>
+
   <td align="center">'.$row['mujeres5'].'</td>
   <td align="center">'.$row['hombres5'].'</td>
   <td align="center">'.$row['otros5'].'</td>
-  <td align="center">'.$row['total6'].'</td>
+  <td align="center">'.$row['total5'].'</td>
+
   <td align="center">'.$row['mujeres6'].'</td>
   <td align="center">'.$row['hombres6'].'</td>
   <td align="center">'.$row['otros6'].'</td>
-  <td align="center">'.$row['total7'].'</td>
+  <td align="center">'.$row['total6'].'</td>
+
   <td align="center">'.$row['mujeres7'].'</td>
   <td align="center">'.$row['hombres7'].'</td>
   <td align="center">'.$row['otros7'].'</td>
-  <td align="center">'.$row['total8'].'</td>
+  <td align="center">'.$row['total7'].'</td>
+
   <td align="center">'.$row['mujeres8'].'</td>
   <td align="center">'.$row['hombres8'].'</td>
   <td align="center">'.$row['otros8'].'</td>
+  <td align="center">'.$row['total8'].'</td>
+
   <td align="center">'.$row['rango1'].'</td>
   <td align="center">'.$row['rango2'].'</td>
   <td align="center">'.$row['rango3'].'</td>

@@ -153,14 +153,7 @@ date_default_timezone_set('America/Mexico_City');
         <div class="row lila">
             <p class="col-8 info center">PERSONAS INTEGRANTES DE LA COMISIÓN DE PARTICIPACIÓN COMUNITARIA PRESENTES</p>
         </div>
-        <div class="row">
-            <div class="col-8 center">
-                <label>TOTAL:</label>
-            </div>
-            <div class="col-4">
-                <input class="in" name ="total_1_2" id ="total_1_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-           </div>     
-        </div>
+        
         <div class="row">
             <div class="col-8 center">
                 <label>MUJERES:</label>
@@ -185,17 +178,18 @@ date_default_timezone_set('America/Mexico_City');
                 <input class="in" name ="otros_1_2" id ="otros_1_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
-        <div class="row lila">
-            <p class="col-8 info center">PERSONAS HABITANTES CON CREDENCIAL DE ELECTOR PRESENTES</p>
-        </div>
         <div class="row">
             <div class="col-8 center">
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_2_2" id ="total_2_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in" name ="total_1_2" id ="total_1_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
+        <div class="row lila">
+            <p class="col-8 info center">PERSONAS HABITANTES CON CREDENCIAL DE ELECTOR PRESENTES</p>
+        </div>
+       
         <div class="row">
             <div class="col-8 center">
                 <label>MUJERES:</label>
@@ -220,17 +214,18 @@ date_default_timezone_set('America/Mexico_City');
                 <input class="in" name ="otros_2_2" id ="otros_2_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
-        <div class="row lila">
-            <p class="col-8 info center">PERSONAS DE ENTRE 16 Y 17 AÑOS PRESENTES</p>
-        </div>
         <div class="row">
             <div class="col-8 center">
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_3_2" id ="total_3_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in" name ="total_2_2" id ="total_2_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
+        <div class="row lila">
+            <p class="col-8 info center">PERSONAS DE ENTRE 16 Y 17 AÑOS PRESENTES</p>
+        </div>
+        
         <div class="row">
             <div class="col-8 center">
                 <label>MUJERES:</label>
@@ -249,6 +244,14 @@ date_default_timezone_set('America/Mexico_City');
         </div>
         <div class="row">
             <div class="col-8 center">
+                <label>TOTAL:</label>
+            </div>
+            <div class="col-4">
+                <input class="in" name ="total_3_2" id ="total_3_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+           </div>     
+        </div>
+        <div class="row">
+            <div class="col-8 center">
                 <label>OTROS:</label>
             </div>
             <div class="col-4">
@@ -258,14 +261,7 @@ date_default_timezone_set('America/Mexico_City');
         <div class="row lila">
             <p class="col-8 info center">PERSONAS HABITANTES MENORES DE EDAD PRESENTES</p>
         </div>
-        <div class="row">
-            <div class="col-8 center">
-                <label>TOTAL:</label>
-            </div>
-            <div class="col-4">
-                <input class="in" name ="total_4_2" id ="total_4_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-           </div>     
-        </div>
+        
         <div class="row">
             <div class="col-8 center">
                 <label>MUJERES:</label>
@@ -290,17 +286,18 @@ date_default_timezone_set('America/Mexico_City');
                 <input class="in" name ="otros_4_2" id ="otros_4_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
-        <div class="row lila">
-            <p class="col-8 info center">PERSONAS FUNCIONARIAS PÚBLICAS PRESENTES</p>
-        </div>
         <div class="row">
             <div class="col-8 center">
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_5_2" id ="total_5_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in" name ="total_4_2" id ="total_4_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
+        <div class="row lila">
+            <p class="col-8 info center">PERSONAS FUNCIONARIAS PÚBLICAS PRESENTES</p>
+        </div>
+       
         <div class="row">
             <div class="col-8 center">
                 <label>MUJERES:</label>
@@ -325,17 +322,18 @@ date_default_timezone_set('America/Mexico_City');
                 <input class="in" name ="otros_5_2" id ="otros_5_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
-        <div class="row lila">
-            <p class="col-8 info center">PERSONAS CON INTERES DE CARÁCTER CONSULTIVO PRESENTES</p>
-        </div>
         <div class="row">
             <div class="col-8 center">
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_6_2" id ="total_6_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in" name ="total_5_2" id ="total_5_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
+        <div class="row lila">
+            <p class="col-8 info center">PERSONAS CON INTERES DE CARÁCTER CONSULTIVO PRESENTES</p>
+        </div>
+        
         <div class="row">
             <div class="col-8 center">
                 <label>MUJERES:</label>
@@ -360,17 +358,18 @@ date_default_timezone_set('America/Mexico_City');
                 <input class="in" name ="otros_6_2" id ="otros_6_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
-        <div class="row lila">
-            <p class="col-8 info center">PERSONAS INTEGRANTES DE ORGANIZACIÓN CIUDADANA CON REGISTRO ANTE IECM:</p>
-        </div>
         <div class="row">
             <div class="col-8 center">
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_7_2" id ="total_7_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in" name ="total_6_2" id ="total_6_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
+        <div class="row lila">
+            <p class="col-8 info center">PERSONAS INTEGRANTES DE ORGANIZACIÓN CIUDADANA CON REGISTRO ANTE IECM:</p>
+        </div>
+        
         <div class="row">
             <div class="col-8 center">
                 <label>MUJERES:</label>
@@ -395,17 +394,18 @@ date_default_timezone_set('America/Mexico_City');
                 <input class="in" name ="otros_7_2" id ="otros_7_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
-        <div class="row lila">
-            <p class="col-8 info center">PERSONAS OBSERVADORAS Y VISITANTES EXTRANJERAS:</p>
-        </div>
         <div class="row">
             <div class="col-8 center">
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_8_2" id ="total_8_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in" name ="total_7_2" id ="total_7_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
+        <div class="row lila">
+            <p class="col-8 info center">PERSONAS OBSERVADORAS Y VISITANTES EXTRANJERAS:</p>
+        </div>
+        
         <div class="row">
             <div class="col-8 center">
                 <label>MUJERES:</label>
@@ -428,6 +428,14 @@ date_default_timezone_set('America/Mexico_City');
             </div>
             <div class="col-4">
                 <input class="in" name ="otros_8_2" id ="otros_8_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+           </div>     
+        </div>
+        <div class="row">
+            <div class="col-8 center">
+                <label>TOTAL:</label>
+            </div>
+            <div class="col-4">
+                <input class="in" name ="total_8_2" id ="total_8_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
         <div class="row lila">

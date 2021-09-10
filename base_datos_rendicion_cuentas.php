@@ -72,45 +72,45 @@ echo '<table border = "1" height="100" align="center" style="font-family: Calibr
       <th colspan="7">SUMAR EL NÚMERO DE PERSONAS POR RANGO DE EDAD Y CAPTURARLO EN LOS SIGUIENTES CAMPOS</th>
     </tr>
     <tr bgcolor="#FFD9C3">
-      <th>TOTAL</th>
       <th>MUJERES</th>
       <th>HOMBRES</th>
       <th>OTROS</th>
+      <th>TOTAL</th>
 
-      <th>TOTAL</th>
       <th>MUJERES</th>
       <th>HOMBRES</th>
       <th>OTROS</th>
+      <th>TOTAL</th>
 
-      <th>TOTAL</th>
       <th>MUJERES</th>
       <th>HOMBRES</th>
       <th>OTROS</th>
+      <th>TOTAL</th>
 
-      <th>TOTAL</th>
       <th>MUJERES</th>
       <th>HOMBRES</th>
       <th>OTROS</th>
+      <th>TOTAL</th>
 
-      <th>TOTAL</th>
       <th>MUJERES</th>
       <th>HOMBRES</th>
       <th>OTROS</th>
+      <th>TOTAL</th>
 
-      <th>TOTAL</th>
       <th>MUJERES</th>
       <th>HOMBRES</th>
       <th>OTROS</th>
+      <th>TOTAL</th>
 
-      <th>TOTAL</th>
       <th>MUJERES</th>
       <th>HOMBRES</th>
       <th>OTROS</th>
+      <th>TOTAL</th>
 
-      <th>TOTAL</th>
       <th>MUJERES</th>
       <th>HOMBRES</th>
       <th>OTROS</th>
+      <th>TOTAL</th>
 
       <th>MENORES DE 16 </th>
       <th>16 A 17</th>
@@ -142,45 +142,45 @@ echo '<table border = "1" height="100" align="center" style="font-family: Calibr
       <td>'. $row['numero_ganador_2021'].'</td>
       <td>'. $row['nombre_ganador_2021'].'</td>
 
-      <td>'. $row['total_1'].'</td>
       <td>'. $row['mujeres_1'].'</td>
       <td>'. $row['hombres_1'].'</td>
       <td>'. $row['otros_1'].'</td>
+      <td>'. $row['total_1'].'</td>
 
-      <td>'. $row['total_2'].'</td>
       <td>'. $row['mujeres_2'].'</td>
       <td>'. $row['hombres_2'].'</td>
       <td>'. $row['otros_2'].'</td>
+      <td>'. $row['total_2'].'</td>
 
-      <td>'. $row['total_3'].'</td>
       <td>'. $row['mujeres_3'].'</td>
       <td>'. $row['hombres_3'].'</td>
       <td>'. $row['otros_3'].'</td>
+      <td>'. $row['total_3'].'</td>
 
-      <td>'. $row['total_4'].'</td>
       <td>'. $row['mujeres_4'].'</td>
       <td>'. $row['hombres_4'].'</td>
       <td>'. $row['otros_4'].'</td>
+      <td>'. $row['total_4'].'</td>
 
-      <td>'. $row['total_5'].'</td>
       <td>'. $row['mujeres_5'].'</td>
       <td>'. $row['hombres_5'].'</td>
       <td>'. $row['otros_5'].'</td>
+      <td>'. $row['total_5'].'</td>
 
-      <td>'. $row['total_6'].'</td>
       <td>'. $row['mujeres_6'].'</td>
       <td>'. $row['hombres_6'].'</td>
       <td>'. $row['otros_6'].'</td>
+      <td>'. $row['total_6'].'</td>
 
-      <td>'. $row['total_7'].'</td>
       <td>'. $row['mujeres_7'].'</td>
       <td>'. $row['hombres_7'].'</td>
       <td>'. $row['otros_7'].'</td>
+      <td>'. $row['total_7'].'</td>
 
-      <td>'. $row['total_8'].'</td>
       <td>'. $row['mujeres_8'].'</td>
       <td>'. $row['hombres_8'].'</td>
       <td>'. $row['otros_8'].'</td>
+      <td>'. $row['total_8'].'</td>
 
       <td>'. $row['menor_16'].'</td>
       <td>'. $row['edad_16_17'].'</td>

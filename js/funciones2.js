@@ -109,41 +109,41 @@ $(document).ready(function(){
         }
     });
 
-    $('#unidad_territorial_2').change(function(e){
-        e.preventDefault();
-        if ($('#unidad_territorial_2').val() != "") {
-            var data =  {
-                cve:$("#unidad_territorial_2").val(),
-                accion:6
-            };
+    // $('#unidad_territorial_2').change(function(e){
+    //     e.preventDefault();
+    //     if ($('#unidad_territorial_2').val() != "") {
+    //         var data =  {
+    //             cve:$("#unidad_territorial_2").val(),
+    //             accion:6
+    //         };
 
-            $.ajax({
-                type: "POST",
-                data: data,
-                url: 'php/load.php',
-                success: function(response) {
-                    if(response == 'row1') {
-                        Swal.fire({
-                            type: 'warning',
-                            title: 'Alerta!!!',
-                            text: 'Ya se registró la asamblea para esta Unidad Territorial'
-                        });
+    //         $.ajax({
+    //             type: "POST",
+    //             data: data,
+    //             url: 'php/load.php',
+    //             success: function(response) {
+    //                 if(response == 'row1') {
+    //                     Swal.fire({
+    //                         type: 'warning',
+    //                         title: 'Alerta!!!',
+    //                         text: 'Ya se registró la asamblea para esta Unidad Territorial'
+    //                     });
 
-                        frm = document.forms['form2'];
-                        for(i=0; ele=frm.elements[i]; i++) {
-                            ele.disabled=true;
-                        }
-                        $("#unidad_territorial_2").attr("disabled", false);
-                    } else {
-                        frm = document.forms['form2'];
-                        for(i=0; ele=frm.elements[i]; i++) {
-                            ele.disabled=false;
-                        }
-                    }
-                }
-            })
-        }        
-    });
+    //                     frm = document.forms['form2'];
+    //                     for(i=0; ele=frm.elements[i]; i++) {
+    //                         ele.disabled=true;
+    //                     }
+    //                     $("#unidad_territorial_2").attr("disabled", false);
+    //                 } else {
+    //                     frm = document.forms['form2'];
+    //                     for(i=0; ele=frm.elements[i]; i++) {
+    //                         ele.disabled=false;
+    //                     }
+    //                 }
+    //             }
+    //         })
+    //     }        
+    // });
 
 
     function validarInputTextRequire($valor) {

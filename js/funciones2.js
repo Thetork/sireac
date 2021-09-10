@@ -194,7 +194,7 @@ $(document).ready(function(){
      function validarTextNumeros($valor) {
         // console.log(e.target());
         var $searchValue = $($valor).val();
-        $texto = /^[a-zA-Z0-9 áéíóúüñ ÁÉÍÓÚÜÑ.'"]*$/;
+        $texto = /^[a-zA-Z0-9 áéíóúüñ ÁÉÍÓÚÜÑ.,#'"]*$/;
     if ($searchValue === "" || $searchValue === null) {
         $($valor).next('div').remove();
             $($valor).focus();

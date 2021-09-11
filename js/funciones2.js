@@ -2,6 +2,16 @@ function mayus(e) {
     e.value = e.value.toUpperCase();
 }
 
+function sumar (valor, id) {
+    var total = 0;    
+    var last = id.substr(id.length - 4);
+    
+    total = $('#total'+ last).val();
+    total = (total == null || total == undefined || total == "") ? 0 : total;
+    total = (parseInt(total) + parseInt(valor));
+    $('#total'+ last).val(total);  
+}
+
 $(document).ready(function(){
     $('#form2').on('submit',function(e){
         e.preventDefault();
@@ -109,6 +119,20 @@ $(document).ready(function(){
         }
     });
 
+    $('#asamblea_cancelada_2').change(function(e){
+        e.preventDefault();
+        $('.total').val("");
+        if ($('#asamblea_cancelada_2').val() == 1) {
+            $('#cancelacion_2').attr('disabled', false);
+            $('.total').attr('disabled', true);
+        } else if ($('#asamblea_cancelada_2').val() == 2) {
+            $('#cancelacion_2').attr('disabled', true);
+            $('.total').attr('disabled', false);
+        } else if ($('#asamblea_cancelada_2').val() == "") {
+            $('#cancelacion_2').attr('disabled', false);
+            $('.total').attr('disabled', false);
+		}
+    });
     // $('#unidad_territorial_2').change(function(e){
     //     e.preventDefault();
     //     if ($('#unidad_territorial_2').val() != "") {

@@ -159,7 +159,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>MUJERES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="mujeres_1_2" id ="mujeres_1_2"  type="text" maxlength="3"  onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="mujeres_1_2" id ="mujeres_1_2"  type="text" maxlength="3"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -167,7 +167,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>HOMBRES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="hombres_1_2" id ="hombres_1_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="hombres_1_2" id ="hombres_1_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -175,7 +175,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>OTROS:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="otros_1_2" id ="otros_1_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="otros_1_2" id ="otros_1_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -183,7 +183,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_1_2" id ="total_1_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="total_1_2" id ="total_1_2" type="text" maxlength="4" readonly onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row lila">
@@ -195,7 +195,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>MUJERES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="mujeres_2_2" id ="mujeres_2_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="mujeres_2_2" id ="mujeres_2_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -203,7 +203,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>HOMBRES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="hombres_2_2" id ="hombres_2_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="hombres_2_2" id ="hombres_2_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -211,7 +211,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>OTROS:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="otros_2_2" id ="otros_2_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="otros_2_2" id ="otros_2_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -219,7 +219,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_2_2" id ="total_2_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="total_2_2" id ="total_2_2" type="text" maxlength="4" readonly onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row lila">
@@ -231,7 +231,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>MUJERES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="mujeres_3_2" id ="mujeres_3_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="mujeres_3_2" id ="mujeres_3_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -239,7 +239,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>HOMBRES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="hombres_3_2" id ="hombres_3_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="hombres_3_2" id ="hombres_3_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -247,7 +247,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_3_2" id ="total_3_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="total_3_2" id ="total_3_2" type="text" maxlength="4" readonly onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -255,7 +255,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>OTROS:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="otros_3_2" id ="otros_3_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="otros_3_2" id ="otros_3_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row lila">
@@ -267,7 +267,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>MUJERES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="mujeres_4_2" id ="mujeres_4_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="mujeres_4_2" id ="mujeres_4_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -275,7 +275,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>HOMBRES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="hombres_4_2" id ="hombres_4_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="hombres_4_2" id ="hombres_4_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -283,7 +283,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>OTROS:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="otros_4_2" id ="otros_4_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="otros_4_2" id ="otros_4_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -291,7 +291,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_4_2" id ="total_4_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="total_4_2" id ="total_4_2" type="text" maxlength="4" readonly onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row lila">
@@ -303,7 +303,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>MUJERES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="mujeres_5_2" id ="mujeres_5_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="mujeres_5_2" id ="mujeres_5_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -311,7 +311,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>HOMBRES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="hombres_5_2" id ="hombres_5_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="hombres_5_2" id ="hombres_5_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -319,7 +319,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>OTROS:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="otros_5_2" id ="otros_5_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="otros_5_2" id ="otros_5_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -327,7 +327,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_5_2" id ="total_5_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="total_5_2" id ="total_5_2" type="text" maxlength="4" readonly onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row lila">
@@ -339,7 +339,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>MUJERES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="mujeres_6_2" id ="mujeres_6_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="mujeres_6_2" id ="mujeres_6_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -347,7 +347,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>HOMBRES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="hombres_6_2" id ="hombres_6_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="hombres_6_2" id ="hombres_6_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -355,7 +355,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>OTROS:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="otros_6_2" id ="otros_6_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="otros_6_2" id ="otros_6_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -363,7 +363,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_6_2" id ="total_6_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="total_6_2" id ="total_6_2" type="text" maxlength="4" readonly onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row lila">
@@ -375,7 +375,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>MUJERES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="mujeres_7_2" id ="mujeres_7_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="mujeres_7_2" id ="mujeres_7_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -383,7 +383,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>HOMBRES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="hombres_7_2" id ="hombres_7_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="hombres_7_2" id ="hombres_7_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -391,7 +391,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>OTROS:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="otros_7_2" id ="otros_7_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="otros_7_2" id ="otros_7_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -399,7 +399,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_7_2" id ="total_7_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="total_7_2" id ="total_7_2" type="text" maxlength="4" readonly onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row lila">
@@ -411,7 +411,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>MUJERES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="mujeres_8_2" id ="mujeres_8_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="mujeres_8_2" id ="mujeres_8_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -419,7 +419,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>HOMBRES:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="hombres_8_2" id ="hombres_8_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="hombres_8_2" id ="hombres_8_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -427,7 +427,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>OTROS:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="otros_8_2" id ="otros_8_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="otros_8_2" id ="otros_8_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row">
@@ -435,7 +435,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>TOTAL:</label>
             </div>
             <div class="col-4">
-                <input class="in" name ="total_8_2" id ="total_8_2" type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name ="total_8_2" id ="total_8_2" type="text" maxlength="4" readonly onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="sumar(this.value, this.id);">
            </div>     
         </div>
         <div class="row lila">
@@ -446,7 +446,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>MENORES DE 16:</label>
             </div>
             <div class="col-4">
-                <input class="in" name= "rango_1_2" id ="rango_1_2"  type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name= "rango_1_2" id ="rango_1_2"  type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
         <div class="row">
@@ -454,7 +454,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>16 A 17:</label>
             </div>
             <div class="col-4">
-                <input class="in" name= "rango_2_2" id ="rango_2_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name= "rango_2_2" id ="rango_2_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
         <div class="row">
@@ -462,7 +462,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>18 A 29:</label>
             </div>
             <div class="col-4">
-                <input class="in" name= "rango_3_2" id ="rango_3_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name= "rango_3_2" id ="rango_3_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
         <div class="row">
@@ -470,7 +470,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>30 A 39:</label>
             </div>
             <div class="col-4">
-                <input class="in" name= "rango_4_2" id ="rango_4_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name= "rango_4_2" id ="rango_4_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
         <div class="row">
@@ -478,7 +478,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>40 A 49:</label>
             </div>
             <div class="col-4">
-                <input class="in" name= "rango_5_2" id ="rango_5_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name= "rango_5_2" id ="rango_5_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
         <div class="row">
@@ -486,7 +486,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>50 A 59:</label>
             </div>
             <div class="col-4">
-                <input class="in" name= "rango_6_2" id ="rango_6_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name= "rango_6_2" id ="rango_6_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
         <div class="row">
@@ -494,7 +494,7 @@ date_default_timezone_set('America/Mexico_City');
                 <label>60 O MÁS:</label>
             </div>
             <div class="col-4">
-                <input class="in" name= "rango_7_2" id ="rango_7_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input class="in total" name= "rango_7_2" id ="rango_7_2"  type="text" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
            </div>     
         </div>
         <div class="row border">

@@ -25,12 +25,53 @@ $(document).ready(function(){
         validarSelect('#asamblea_cancelada_2');
         $valor = $('#asamblea_cancelada_2').val();
         if($valor == 1){
-            validarTextNumeros('#cancelacion_2');
+            validarTextNumerosRequire('#cancelacion_2');
         } else if($valor == ""){
-            validarTextNumeros('#cancelacion_2');
+            validarTextNumerosRequire('#cancelacion_2');
         } else{
-            validarTextNumeros('#cancelacion_2');
+            validarTextNumerosRequire('#cancelacion_2');
         }
+        if($valor == 1 ) {
+        validarNumeros4Require('#total_1_2');
+        validarNumeros4Require('#mujeres_1_2');
+        validarNumeros4Require('#hombres_1_2');
+        validarNumeros4Require('#otros_1_2');
+        validarNumeros4Require('#total_2_2');
+        validarNumeros4Require('#mujeres_2_2');
+        validarNumeros4Require('#hombres_2_2');
+        validarNumeros4Require('#otros_2_2');
+        validarNumeros4Require('#total_3_2');
+        validarNumeros4Require('#mujeres_3_2');
+        validarNumeros4Require('#hombres_3_2');
+        validarNumeros4Require('#otros_3_2');
+        validarNumeros4Require('#total_4_2');
+        validarNumeros4Require('#mujeres_4_2');
+        validarNumeros4Require('#hombres_4_2');
+        validarNumeros4Require('#otros_4_2');
+        validarNumeros4Require('#total_5_2');
+        validarNumeros4Require('#mujeres_5_2');
+        validarNumeros4Require('#hombres_5_2');
+        validarNumeros4Require('#otros_5_2');
+        validarNumeros4Require('#total_6_2');
+        validarNumeros4Require('#mujeres_6_2');
+        validarNumeros4Require('#hombres_6_2');
+        validarNumeros4Require('#otros_6_2');
+        validarNumeros4Require('#total_7_2');
+        validarNumeros4Require('#mujeres_7_2');
+        validarNumeros4Require('#hombres_7_2');
+        validarNumeros4Require('#otros_7_2');
+        validarNumeros4Require('#total_8_2');
+        validarNumeros4Require('#mujeres_8_2');
+        validarNumeros4Require('#hombres_8_2');
+        validarNumeros4Require('#otros_8_2');
+        validarNumeros4Require('#rango_1_2');
+        validarNumeros4Require('#rango_2_2');
+        validarNumeros4Require('#rango_3_2');
+        validarNumeros4Require('#rango_4_2');
+        validarNumeros4Require('#rango_5_2');
+        validarNumeros4Require('#rango_6_2');
+        validarNumeros4Require('#rango_7_2');
+        } else{
         validarNumeros4('#total_1_2');
         validarNumeros('#mujeres_1_2');
         validarNumeros('#hombres_1_2');
@@ -70,6 +111,7 @@ $(document).ready(function(){
         validarNumeros('#rango_5_2');
         validarNumeros('#rango_6_2');
         validarNumeros('#rango_7_2');
+    }
         validarTextNumeros('#elaboro_2');
         var datos = new FormData(this);
         if($validar){
@@ -238,6 +280,17 @@ $(document).ready(function(){
         $($valor).next('div').remove();
         $($valor).css( "border-color","black");
      }
+     }
+     function validarTextNumerosRequire($valor) {
+        // console.log(e.target());
+        var $searchValue = $($valor).val();
+        return $validar = true;
+     }
+     function validarNumeros4Require($valor){
+     
+        $($valor).css( "border-color","black");
+        var $searchValue = $($valor).val();
+        return $validar = true;
      }
 
      function validarNumeros4($valor){

@@ -3,14 +3,35 @@ function mayus(e) {
 }
 
 function sumar (valor, id) {
-    var total = 0;    
     var last = id.substr(id.length - 4);
+    let hombre = "#hombres", 
+        mujer = "#mujeres",
+        otro = "#otros";
+
+    ($(hombre+last).val() == "") ? value_hom = 0 : value_hom = $(hombre+last).val();
+    ($(mujer+last).val() == "") ? value_muj = 0 : value_muj = $(mujer+last).val();
+    ($(otro+last).val() == "") ? value_otro = 0 : value_otro = $(otro+last).val();
+
+    let res = parseInt(value_hom)+parseInt(value_muj)+parseInt(value_otro);
+    $("#total"+last).val(res);
+
+    // var total = 0;    
+    //   var last = id.substr(id.length - 4);
     
-    total = $('#total'+ last).val();
-    total = (total == null || total == undefined || total == "") ? 0 : total;
-    total = (parseInt(total) + parseInt(valor));
-    $('#total'+ last).val(total);  
+    // total = $('#total'+ last).val();
+    //     // total = (Number(total)) ? 0 : total;
+    //     // console.log(total);
+    // // total = (isNaN(total)) ? $('#total'+ last).val(0) : total;
+    // total = (total == null || total == undefined || total == "") ? 0 : total;
+
+    // // valor = (isNaN(valor)) ? $('#total'+ last).val(0) : valor;
+    // valor = (valor == null || valor == undefined || valor == "") ? 0 : valor;
+    // // total = (total == "" || !total) ? total = 0 : total = total;
+    // total = (parseInt(total) + parseInt(valor));
+    // $('#total'+ last).val(total);  
+    // console.log( total);
 }
+
 
 $(document).ready(function(){
     $('#form2').on('submit',function(e){

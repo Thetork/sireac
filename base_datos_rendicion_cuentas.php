@@ -138,9 +138,9 @@ echo '<table border = "1" height="100" align="center" style="font-family: Calibr
       <td>'. utf8_encode($row['motivo_cancelacion']).'</td>
 
       <td>'. $row['numero_ganador_2020'].'</td>
-      <td>'. $row['nombre_ganador_2020'].'</td>
+      <td>'. utf8_encode($row['nombre_ganador_2020']).'</td>
       <td>'. $row['numero_ganador_2021'].'</td>
-      <td>'. $row['nombre_ganador_2021'].'</td>
+      <td>'. utf8_encode($row['nombre_ganador_2021']).'</td>
 
       <td>'. $row['mujeres_1'].'</td>
       <td>'. $row['hombres_1'].'</td>

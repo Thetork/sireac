@@ -288,7 +288,16 @@ echo "<table cellspacing='5' cellpadding='5' width='100%' border='1'  align='cen
         ';
 echo "</table>";
 echo '<br><br>';
-$sql = "SELECT nombre_delegacion,
+$sql = "SELECT nombre_delegacion, sum(total1) as total1, sum(mujeres1) as mujeres1, sum(hombres1) as hombres1,sum(otros1) as otros1,
+sum(total2) as total2, sum(mujeres2) as mujeres2, sum(hombres2) as hombres2,sum(otros2) as otros2,
+sum(total3) as total3, sum(mujeres3) as mujeres3, sum(hombres3) as hombres3,sum(otros3) as otros3,
+sum(total4) as total4, sum(mujeres4) as mujeres4, sum(hombres4) as hombres4,sum(otros4) as otros4,
+sum(total5) as total5, sum(mujeres5) as mujeres5, sum(hombres5) as hombres5,sum(otros5) as otros5,
+sum(total6) as total6, sum(mujeres6) as mujeres6, sum(hombres6) as hombres6,sum(otros6) as otros6,
+sum(total7) as total7, sum(mujeres7) as mujeres7, sum(hombres7) as hombres7,sum(otros7) as otros7,
+sum(total8) as total8, sum(mujeres8) as mujeres8, sum(hombres8) as hombres8,sum(otros8) as otros8,
+sum(rango1) as rango1, sum(rango2) as rango2, sum(rango3) as rango3, sum(rango4) as rango4, sum(rango5) as rango5, sum(rango6) as rango6, sum(rango7) as rango7 from
+(SELECT nombre_delegacion,
 sum(total_1) as total1,sum(mujeres_1) as mujeres1, sum(hombres_1) as hombres1, sum(otros_1) as otros1,
 sum(total_2) as total2,sum(mujeres_2) as mujeres2, sum(hombres_2) as hombres2, sum(otros_2) as otros2,
 sum(total_3) as total3,sum(mujeres_3) as mujeres3, sum(hombres_3) as hombres3, sum(otros_3) as otros3,
@@ -300,7 +309,19 @@ sum(total_8) as total8,sum(mujeres_8) as mujeres8, sum(hombres_8) as hombres8, s
 sum(menor_16) as rango1, sum(edad_16_17) as rango2, sum(edad_18_29) as rango3,
 sum(edad_30_39) as rango4, sum(edad_40_49) as rango5, sum(edad_50_59) as rango6,
 sum(edad_60_mas) as rango7
-from cat_delegacion as d, sireac_formato2 as t where d.id_delegacion = t.id_delegacion and asamblea_cancelada = 2 group by nombre_delegacion";
+from cat_delegacion as d, sireac_formato2 as t where d.id_delegacion = t.id_delegacion group by nombre_delegacion
+union all
+select nombre_delegacion, 
+total1 = '', mujeres1 = '', hombres1= '', otros1 = '',
+total2 = '', mujeres2 = '', hombres2= '', otros2 = '',
+total3 = '', mujeres3 = '', hombres3= '', otros3 = '',
+total4 = '', mujeres4 = '', hombres4= '', otros4 = '',
+total5 = '', mujeres5 = '', hombres5= '', otros5 = '',
+total6 = '', mujeres6 = '', hombres6= '', otros6 = '',
+total7 = '', mujeres7 = '', hombres7= '', otros7 = '',
+total8 = '', mujeres8 = '', hombres8= '', otros8 = '',
+rango1= '', rango2= '', rango3= '', rango4= '', rango5= '',
+rango6= '', rango7= '' from cat_delegacion ) as a group by nombre_delegacion order by nombre_delegacion";
  $qry = sqlsrv_query($conn, $sql);
 
  echo "<table border = '1' height='100' align='center' style='font-family: Calibri Light;'>";

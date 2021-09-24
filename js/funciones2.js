@@ -45,14 +45,8 @@ $(document).ready(function(){
         validarHora('#hora_2');
         validarSelect('#asamblea_cancelada_2');
         $valor = $('#asamblea_cancelada_2').val();
-        if($valor == 1){
-            validarTextNumerosRequire('#cancelacion_2');
-        } else if($valor == ""){
-            validarTextNumerosRequire('#cancelacion_2');
-        } else{
-            validarTextNumerosRequire('#cancelacion_2');
-        }
-        if($valor == 1 ) {
+        if($valor == 1  || $valor == ""){
+        validarTextNumeros('#cancelacion_2');
         validarNumeros4Require('#total_1_2');
         validarNumeros4Require('#mujeres_1_2');
         validarNumeros4Require('#hombres_1_2');
@@ -92,7 +86,8 @@ $(document).ready(function(){
         validarNumeros4Require('#rango_5_2');
         validarNumeros4Require('#rango_6_2');
         validarNumeros4Require('#rango_7_2');
-        } else{
+        } else if ($valor == 2){
+        validarTextNumerosRequire('#cancelacion_2');
         validarNumeros4('#total_1_2');
         validarNumeros('#mujeres_1_2');
         validarNumeros('#hombres_1_2');
@@ -304,13 +299,18 @@ $(document).ready(function(){
      }
      function validarTextNumerosRequire($valor) {
         // console.log(e.target());
+       
         var $searchValue = $($valor).val();
+        $($valor).next('div').remove();
+        $($valor).css( "border-color","black");
         return $validar = true;
+
      }
      function validarNumeros4Require($valor){
      
-        $($valor).css( "border-color","black");
         var $searchValue = $($valor).val();
+        $($valor).next('div').remove();
+        $($valor).css( "border-color","black");
         return $validar = true;
      }
 

@@ -1,5 +1,5 @@
 <?php 
-$URL = "http://145.0.40.76/sedicop/registro_asambleas/img/";
+$URL = "https://aplicaciones.iecm.mx/sedicop/registro_asambleas/img/";
 ?>
 
 <!DOCTYPE html>

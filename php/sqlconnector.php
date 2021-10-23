@@ -2,8 +2,8 @@
 
 
 //$serverName = "LAPTOP-5707RJV3";
-$serverName = "145.0.40.72"; 
-$connectionInfo = array( "Database"=>"sedicop", "UID"=>"sedicop_db7", "PWD"=>"S3diposdHr", "ReturnDatesAsStrings" =>"true");
+$serverName = "145.0.40.70"; 
+$connectionInfo = array( "Database"=>"sedicop", "UID"=>"sedicop_db7", "PWD"=>"S3diDpo3sdHr", "ReturnDatesAsStrings" =>"true");
 //$connectionInfo = array( "Database"=>"sedicop", "UID"=>"sa", "PWD"=>"12345", "ReturnDatesAsStrings" =>"true");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 if( $conn ) {

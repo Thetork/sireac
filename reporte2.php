@@ -18,6 +18,36 @@ date_default_timezone_set('America/Mexico_City');
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="js/sweet2/sweetalert2.min.css">
 </head>
+<style>
+    .btn-flotante {
+font-size: 16px; /* Cambiar el tamaño de la tipografia */
+text-transform: uppercase; /* Texto en mayusculas */
+font-weight: bold; /* Fuente en negrita o bold */
+/*color: #ffffff;  Color del texto */
+border-radius: 5px; /* Borde del boton */
+/*letter-spacing: 2px;  Espacio entre letras */
+/*background-color: #E91E63;  Color de fondo */
+padding: 10px 15px; /* Relleno del boton */
+position: fixed;
+text-decoration: none!important;
+bottom: 15px;
+left: 10px;
+z-index: 99;
+}
+/* .btn-flotante:hover {
+background-color: #2c2fa5; Color de fondo al pasar el cursor
+box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+transform: translateY(-7px);
+} */
+@media only screen and (max-width: 600px) {
+.btn-flotante {
+font-size: 14px;
+padding: 8px 10px;
+bottom: 10px;
+left: 5px;
+}
+}
+</style>
 <a href="eleccion.php" class="btn-flotante btn-warning"><i class="fas fa-home"></i> Inicio</a>
 <body>
 
@@ -521,6 +551,28 @@ date_default_timezone_set('America/Mexico_City');
             </button>
         </div> -->
 </div>
+<script>
+    function reportesamablea(){
+        var accion = 7;
+        var formData = {accion:accion};
+        $.ajax({
+            type: "POST",
+            url: "php/load.php",
+            data: formData,
+            success: function(response) {
+                if (response >= 1) {
+                    window.location.href = './reporte_rendicion_cuentas_dd.php';
+                } else {
+                    Swal.fire({
+                        type: 'warning',
+                        title: 'Alerta!!!',
+                        text: 'No existe información!'
+                    })
+                }
+            }
+        });
+    }
+</script>
 <?php include ("footer.php"); ?>
 </body>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

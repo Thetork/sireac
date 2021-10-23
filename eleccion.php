@@ -52,6 +52,28 @@ date_default_timezone_set('America/Mexico_City');
     	</div>
     </div>
     <?php include ("footer.php"); ?>
+    <script>
+        function reportesamablea(){
+    var accion = 7;
+    var formData = {accion:accion};
+    $.ajax({
+        type: "POST",
+        url: "php/load.php",
+        data: formData,
+        success: function(response) {
+            if (response >= 1) {
+                window.location.href = './reporte_rendicion_cuentas_dd.php';
+            } else {
+                Swal.fire({
+                    type: 'warning',
+                    title: 'Alerta!!!',
+                    text: 'No existe información!'
+                })
+            }
+        }
+    });
+}
+    </script>
 </body>
 <script src="js/funciones.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
